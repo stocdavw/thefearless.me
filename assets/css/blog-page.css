@@ -2120,7 +2120,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			
+
 			background-color: #b84752;
 			border-color: #b84752;
 			color: 737373;
@@ -2615,7 +2615,7 @@ input, select, textarea {
 /* wrapper */
 
 	.wrapper {
-		padding: 6rem 0 0rem 0 ;
+		padding: 1rem 0 0rem 0 ;
 	}
 
 		.wrapper header {
@@ -2627,7 +2627,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.wrapper {
-				padding: 4rem 0 2rem 0 ;
+				padding: 0.5rem 0 2rem 0 ;
 			}
 
 		}
@@ -2635,7 +2635,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.wrapper {
-				padding: 3rem 0 1rem 0 ;
+				padding: 0.5rem 0 1rem 0 ;
 			}
 
 		}
@@ -2978,7 +2978,7 @@ input, select, textarea {
 
 		#header.alt {
 			left: 0;
-			position: absolute;
+
 			top: 0;
 		}
 
@@ -3150,6 +3150,40 @@ input, select, textarea {
 								}
 
 						}
+
+						#header form {
+							margin: 0;
+						}
+
+							#header form input {
+								display: inline-block;
+								height: 2.5em;
+								position: relative;
+								top: -2px;
+								vertical-align: middle;
+							}
+
+						#header #search {
+							-moz-transition: all 0.5s ease;
+							-webkit-transition: all 0.5s ease;
+							-ms-transition: all 0.5s ease;
+							transition: all 0.5s ease;
+							max-width: 0;
+							opacity: 0;
+							overflow: hidden;
+							padding: 0;
+							white-space: nowrap;
+						}
+
+							#header #search input {
+								width: 12em;
+							}
+
+							#header #search.visible {
+								max-width: 12.5em;
+								opacity: 1;
+								padding: 0 0.5em 0 0;
+							}
 
 		.dropotron {
 			background: #141414;
