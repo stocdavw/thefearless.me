@@ -126,6 +126,25 @@ input, select, textarea {
   opacity: 0.5; /* Adjust the opacity to achieve the desired effect */
 }
 
+.banner.onload-image-fade-down .image img {
+	-moz-transition: opacity 0.75s ease-in-out;
+	-webkit-transition: opacity 0.75s ease-in-out;
+	-ms-transition: opacity 0.75s ease-in-out;
+	transition: opacity 0.75s ease-in-out;
+	-moz-transition-delay: 0.5625s;
+	-webkit-transition-delay: 0.5625s;
+	-ms-transition-delay: 0.5625s;
+	transition-delay: 0.5625s;
+}
+
+body.is-preload .banner.onload-image-fade-down .image {
+-moz-transform: translateY(-1rem);
+-webkit-transform: translateY(-1rem);
+-ms-transform: translateY(-1rem);
+transform: translateY(-1rem);
+opacity: 0;
+}
+
 /* Typography */
 
 	html {
@@ -2032,7 +2051,7 @@ input, select, textarea {
 			border-color: #737373;
 			box-shadow: 0 0 0 1px #737373;
 		}
-	
+
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,

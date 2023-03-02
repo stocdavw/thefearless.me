@@ -3127,6 +3127,7 @@ input, select, textarea {
 					display: -webkit-flex;
 					display: -ms-flex;
 					display: flex;
+					background-color: #fff
 					-moz-align-items: center;
 					-webkit-align-items: center;
 					-ms-align-items: center;
@@ -3170,7 +3171,7 @@ input, select, textarea {
 					}
 
 				.spotlight .content {
-					padding: 5rem 5rem 2.5rem 5rem ;
+					padding: 1rem 5rem 0rem 5rem ;
 					-moz-transition: opacity 0.5s ease-out, -moz-transform 0.5s ease-out;
 					-webkit-transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
 					-ms-transition: opacity 0.5s ease-out, -ms-transform 0.5s ease-out;
@@ -3258,6 +3259,14 @@ input, select, textarea {
 				}
 
 				.spotlight.accent4 p {
+					color: #865523;
+				}
+
+				.spotlight.accent5 h3 {
+					color: #865523;
+				}
+
+				.spotlight.accent5 p {
 					color: #865523;
 				}
 
