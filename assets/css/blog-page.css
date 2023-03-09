@@ -1986,7 +1986,7 @@ input, select, textarea {
 		color: inherit;
 		display: block;
 		outline: 0;
-		padding: 0 1rem;
+		padding: 1rem 1rem;
 		text-decoration: none;
 		width: 100%;
 	}

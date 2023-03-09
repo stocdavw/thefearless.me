@@ -23,9 +23,9 @@ www.thefearless.me
 					<li>
 						<a href="index.html">Transformations</a>
 							<ul>
-									<li><a href="index.html #one">The FEARLESS Me Online</a></li>
+									<li><a href="index.html#one">The FEARLESS Me Online</a></li>
 									<li><a href="who-is-the-fearless-me.html" target="_blank">Who is The FEARLESS Me</a></li>
-									<li><a href="alignment-coaching-certification.html" target="_blank">Alignment Coaching Certification</a></li>
+									<li><a href="alignment-coaching-certification.html" target="_blank">Alignment Coaching®</a></li>
 									<li><a href="events.html"  target="_blank">Events</a></li>
 							</ul>
 					</li>
@@ -39,6 +39,8 @@ www.thefearless.me
 					</li>
 					<li><a href="about-us.html">About Us</a></li>
 					<li><a href="#">Contact Us</a></li>
+					<li><a href="Login.html">Login</a>Not a member yet?   </li>
+					<li><a href="Signup.html">Sign Up</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -57,20 +59,20 @@ www.thefearless.me
 						<p>Fill out the form below and our team will get back to you as soon as possible!</p>
 					</header>
 					<div class="inner">
-					<form method="post" action="#">
+					<form method="post" action="assets/php/contact-us.php">
 						<div class="row gtr-uniform">
 							<div class="col-6 col-12-xsmall";>
-								<input type="text" name="First Name" id="firstname" value="" placeholder="First Name" />
-								<input type="text" name="Last Name" id="lastname" value="" placeholder="Last Name" />
+								<input type="text" name="firstname" id="firstname" value="" placeholder="First Name" />
+								<input type="text" name="lastname" id="lastname" value="" placeholder="Last Name" />
 								<input type="email" name="email" id="email" value="" placeholder="Email" />
 							</div>
 							<div class="col-6 col-12-xsmall">
-    						<textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+    						<textarea type="text" name="message" id="message" rows="5" placeholder="Message"></textarea>
   						</div>
 						</div>
 					</div>
 						<ul class="actions special">
-							<li><a href="index.html" class="button medium primary">Submit</a></li>
+							<input type="submit" name="submit" value="Submit" class="button medium primary" /input>
 						</ul>
 
 				</div>
