@@ -19,11 +19,11 @@ www.thefearless.me
 				<ul class="nav">
 					<a href="#"><img src="images\favicon.png" alt="The FEARLESS Me Logo" width="64" height="64"></a>
 						<li>
-							<a href="index.html">Transformations</a>
+							<a href="#">Transformations</a>
 								<ul>
-										<li><a href="index.html#one">The FEARLESS Me Online</a></li>
-										<li><a href="sp/who-is-the-fearless-me.html" target="_blank">Who is The FEARLESS Me</a></li>
-										<li><a href="sp/alignment-coaching-certification.html" target="_blank">Alignment Coaching®</a></li>
+										<li><a href="#one">The FEARLESS Me Online</a></li>
+										<li><a href="who-is-the-fearless-me.html" target="_blank">Who is The FEARLESS Me</a></li>
+										<li><a href="alignment-coaching-certification.html" target="_blank">Alignment Coaching®</a></li>
 										<li><a href="events.html"  target="_blank">Events</a></li>
 								</ul>
 						</li>
@@ -42,7 +42,7 @@ www.thefearless.me
 			</nav>
 		</header>
 
-
+		<!-- Banner -->
 				<div id="banner">
 					<article data-position="middle right">
 						<div class="inner">
@@ -93,27 +93,26 @@ www.thefearless.me
 					</article>
 				</div>
 
+				<!-- Popup Login/Register form -->
+			<div class="pop">
 				<div class="wrapper">
-						<span class="icon-close"></span>
+						<span class="icon-close">x</span>
 						<div class="form-box login">
 								<h2>Login</h2>
-								<form action="#">
+								<form action="assets/php/Login.php">
 										<div class="input-box">
-												<span class="icon">
-														<ion-icon name="mail"></ion-icon>
-												</span>
-												<input type="email" required>
+														<a class="icon fa-envelope"></a>
+												<input type="email" name="email" required>
 												<label>Email</label>
 										</div>
 										<div class="input-box">
-												<span class="icon">
-														<ion-icon name="lock-closed"></ion-icon>
-												</span>
-												<input type="password" required>
+														<a class="icon fa-lock"></a>
+												<input type="password" name="password" required>
 												<label>Password</label>
 										</div>
 										<div class="remember-forgot">
-												<label><input type="checkbox"> Remember me</label>
+												<input type="checkbox" id="remember-me" name="remember-me">
+												<label for="remember-me"> Remember me</label>
 												<a href="#">Forgot Password?</a>
 										</div>
 										<button type="submit" class="btn">Login</button>
@@ -125,30 +124,30 @@ www.thefearless.me
 
 						<div class="form-box register">
 								<h2>Registration</h2>
-								<form action="#">
+								<form action="assets/php/Signup.php">
 										<div class="input-box">
-												<span class="icon">
-														<ion-icon name="person"></ion-icon>
-												</span>
-												<input type="text" required>
-												<label>Username</label>
+														<a class="icon fa-user"></a>
+												<input type="text" name="firstname" required>
+												<label>First Name</label>
 										</div>
 										<div class="input-box">
-												<span class="icon">
-														<ion-icon name="mail"></ion-icon>
-												</span>
-												<input type="email" required>
+														<a class="icon fa-user"></a>
+												<input type="text" name="lastname" required>
+												<label>Last Name</label>
+										</div>
+										<div class="input-box">
+														<a class="icon fa-envelope"></a>
+												<input type="email" name="email" required>
 												<label>Email</label>
 										</div>
 										<div class="input-box">
-												<span class="icon">
-														<ion-icon name="lock-closed"></ion-icon>
-												</span>
+														<a class="icon fa-lock"></a>
 												<input type="password" required>
 												<label>Password</label>
 										</div>
 										<div class="remember-forgot">
-												<label><input type="checkbox"> I agree to the terms & conditions</label>
+												<input type="checkbox" id="agree" name="agree" value="true">
+												<label for="agree"> I agree to the terms & conditions</label>
 										</div>
 										<button type="submit" class="btn">Register</button>
 										<div class="login-register">
@@ -157,7 +156,7 @@ www.thefearless.me
 								</form>
 						</div>
 				</div>
-
+			</div>
 
 
 		<!-- One -->
@@ -168,7 +167,7 @@ www.thefearless.me
 						<li><a href="wheel-of-life.html" target="_blank" class="button large primary">FREE Self Evaluation!</a></li>
 					</ul>
 					<header>
-						<h2 style="color: #777777;">Follow the path to Alignment</h2>
+						<h2>Follow the path to Alignment</h2>
 						<p>Follow these steps in order to fully develop into your true self.</p>
 					</header>
 
@@ -281,6 +280,7 @@ www.thefearless.me
 			<script src="assets/js/popup.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://kit.fontawesome.com/437f073368.js" crossorigin="anonymous"></script>
 
 
 	</body>

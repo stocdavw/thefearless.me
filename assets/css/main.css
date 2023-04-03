@@ -1,3 +1,4 @@
+@import url("https://kit.fontawesome.com/437f073368.js");
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
@@ -10,7 +11,7 @@
 */
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h1, h2, h3, h4, h5, h6, p,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -38,15 +39,6 @@ body {
 ol, ul {
 	list-style: none;
 }
-
-blockquote, q {
-	quotes: none;
-}
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
 
 table {
 	border-collapse: collapse;
@@ -126,25 +118,6 @@ input, select, textarea {
   z-index: 1;
   background-color: white;
   opacity: 0.5; /* Adjust the opacity to achieve the desired effect */
-}
-
-.banner.onload-image-fade-down .image img {
-	-moz-transition: opacity 0.75s ease-in-out;
-	-webkit-transition: opacity 0.75s ease-in-out;
-	-ms-transition: opacity 0.75s ease-in-out;
-	transition: opacity 0.75s ease-in-out;
-	-moz-transition-delay: 0.5625s;
-	-webkit-transition-delay: 0.5625s;
-	-ms-transition-delay: 0.5625s;
-	transition-delay: 0.5625s;
-}
-
-body.is-preload .banner.onload-image-fade-down .image {
--moz-transform: translateY(-1rem);
--webkit-transform: translateY(-1rem);
--ms-transform: translateY(-1rem);
-transform: translateY(-1rem);
-opacity: 0;
 }
 
 /* Typography */
@@ -291,67 +264,6 @@ opacity: 0;
 		}
 
 	}
-
-	sub {
-		font-size: 0.8rem;
-		position: relative;
-		top: 0.5rem;
-	}
-
-	sup {
-		font-size: 0.8rem;
-		position: relative;
-		top: -0.5rem;
-	}
-
-	blockquote {
-		border-left: solid 0.5rem rgba(255, 255, 255, 0.25);
-		font-style: italic;
-		margin: 0 0 2rem 0;
-		padding: 1rem 0 1rem 2rem;
-	}
-
-	code {
-		background: rgba(255, 255, 255, 0.075);
-		border-radius: 4px;
-		border: 1px solid rgba(255, 255, 255, 0.25);
-		font-family: "Courier New", monospace;
-		font-size: 0.9rem;
-		margin: 0 0.25rem;
-		padding: 0.25rem 0.65rem;
-	}
-
-	pre {
-		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
-		font-size: 0.9rem;
-		margin: 0 0 2rem 0;
-	}
-
-		pre code {
-			display: block;
-			line-height: 1.75;
-			padding: 1rem 1.5rem;
-			overflow-x: auto;
-		}
-
-	hr {
-		border: 0;
-		border-bottom: solid 1px rgba(255, 255, 255, 0.25);
-		margin: 2rem 0;
-	}
-
-		hr.major {
-			margin: 4rem 0;
-		}
-
-		@media screen and (max-width: 736px) {
-
-			hr.major {
-				margin: 3rem 0;
-			}
-
-		}
 
 /* Row */
 
@@ -2173,7 +2085,7 @@ opacity: 0;
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: rgba(255, 255, 255, 0.7);
+			color: #fff;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1rem;
@@ -2199,7 +2111,7 @@ opacity: 0;
 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
-				background: rgba(255, 255, 255, 0.075);
+				background: transparent;
 				border-color: rgba(255, 255, 255, 0.25);
 				border-radius: 4px;
 				border: solid 1px;
@@ -2642,78 +2554,20 @@ opacity: 0;
 
 /* Table */
 
-	.table-wrapper {
-		-webkit-overflow-scrolling: touch;
-		overflow-x: auto;
-	}
-
-	table {
-		margin: 0 0 2rem 0;
+.pop {
+		position: fixed;
 		width: 100%;
-	}
+    display: flex;
+		justify-content: center;
 
-		table tbody tr {
-			border: solid 1px rgba(255, 255, 255, 0.25);
-			border-left: 0;
-			border-right: 0;
-		}
-
-			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(255, 255, 255, 0.075);
-			}
-
-		table td {
-			padding: 0.75rem 0.75rem;
-		}
-
-		table th {
-			color: #fff;
-			font-size: 0.9rem;
-			font-weight: 700;
-			padding: 0 0.75rem 0.75rem 0.75rem;
-			text-align: left;
-		}
-
-		table thead {
-			border-bottom: solid 2px rgba(255, 255, 255, 0.25);
-		}
-
-		table tfoot {
-			border-top: solid 2px rgba(255, 255, 255, 0.25);
-		}
-
-		table.alt {
-			border-collapse: separate;
-		}
-
-			table.alt tbody tr td {
-				border: solid 1px rgba(255, 255, 255, 0.25);
-				border-left-width: 0;
-				border-top-width: 0;
-			}
-
-				table.alt tbody tr td:first-child {
-					border-left-width: 1px;
-				}
-
-			table.alt tbody tr:first-child td {
-				border-top-width: 1px;
-			}
-
-			table.alt thead {
-				border-bottom: 0;
-			}
-
-			table.alt tfoot {
-				border-top: 0;
-			}
+		z-index: 999;
+}
 
 /* wrapper */
 
 .wrapper {
-		position: absolute;
-		left: 39%;
-		transform: translate(-50%, -50%);
+		
+		Position: relative;
 		width: 425px;
 		height: 750px;
 		background: transparent;
@@ -2728,16 +2582,23 @@ opacity: 0;
 		overflow: hidden;
 		transform: scale(0);
 		transition: transform .5s ease, height .2s ease;
-		z-index: 950;
+		padding: 6rem 0 2rem 0 ;
+
 }
 
-.wrapper {
-		padding: 6rem 0 0rem 0 ;
-	}
+  /*@media screen and (max-width: 1920px) {
 
-		@media screen and (max-width: 980px) {
+		.wrapper {
+			position: absolute;
+			left: 39%;
+			padding: 6rem 0 2rem 0 ;
+		}
+
+		 @media screen and (max-width: 980px) {
 
 			.wrapper {
+				position: absolute;
+				left: 25%;
 				padding: 4rem 0 2rem 0 ;
 			}
 
@@ -2746,10 +2607,12 @@ opacity: 0;
 		@media screen and (max-width: 480px) {
 
 			.wrapper {
+				position: relative;
+				width: 100%
 				padding: 3rem 0 1rem 0 ;
 			}
 
-		}
+		} */
 
 		.wrapper header {
 			margin: 0 auto 2rem auto;
@@ -2872,8 +2735,8 @@ opacity: 0;
 		    justify-content: space-between;
 		}
 
-		.remember-forgot label input {
-		    accent-color: #fff;
+		.remember-forgot input label {
+		    color: #fff;
 		    margin-right: 3px;
 		}
 
@@ -2947,7 +2810,7 @@ opacity: 0;
 
 	.features-grid {
 		width: 100%;
-		margin: 10px 10
+		margin: 10px;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3396,21 +3259,6 @@ opacity: 0;
 
 						#header > nav > ul li a:hover {
 							color: #fff;
-						}
-
-					body.blog-page #header > nav > ul li a {
-						color: #a6a6a6;
-						display: inline-block;
-						font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
-						font-weight: 700;
-						letter-spacing: 0.15rem;
-						padding: 0 2rem;
-						text-decoration: none;
-						text-transform: uppercase;
-					}
-
-						body.blog-page #header > nav > ul li a:hover {
-							color: #737373;
 						}
 
 						@media screen and (max-width: 736px) {
