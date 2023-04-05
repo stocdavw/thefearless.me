@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 /*
 	Wide Angle by Pixelarity
@@ -2871,11 +2872,11 @@ input, select, textarea {
 	}
 
 		.features-grid-item[data-bg] {
-    			background-image: url("");
-    			background-size: cover;
-    			background-position: center;
-			background-color: white;
-  			opacity: 0.75; /* Adjust the opacity to achieve the desired effect */
+    	background-image: url("");
+    	background-size: cover;
+    	background-position: center;
+			background-color: #e0e8d5;
+  		opacity: 0.25; /* Adjust the opacity to achieve the desired effect */
 			padding: 1rem;
 		}
 
@@ -2923,7 +2924,7 @@ input, select, textarea {
 
 		.features-grid > div {
 			border-style: solid;
-			border-color: rgba(255, 255, 255, 0.25);
+			border-color: #e0e8d5;
 			border-left-width: 1px;
 			border-top-width: 1px;
 			text-align: center;
@@ -2943,8 +2944,8 @@ input, select, textarea {
 
 			.features-grid > div .number {
 				border-radius: 100%;
-				border: 2px solid #fff;
-				color: #fff;
+				border: 2px solid #e0e8d5;
+				color: #e0e8d5;
 				display: block;
 				font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
 				font-size: 2rem;
